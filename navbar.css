@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    font-family: "微軟正黑體";
+    
+}
+body{
+    margin: 0px;
+}
+.navbar{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav_flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.web_navlogo{
+    padding-top: 30px;
+    float: left;
+}
+
+.nav_item{
+    text-decoration: none;
+    align-self: center;
+    float: right;
+ }
+
+.nav_link{
+    padding: 80px 20px 10px 20px;
+    margin-left: 12px;
+    display: inline-block;
+    color: white;
+    
+    animation-name: example;
+    animation-duration: 4s;
+    background-image: linear-gradient(to right,#de6967 , #ae3d6b);
+}
+
+@keyframes example {
+    from {background-color: #de6967;}
+    to {background-color: #ae3d6b;}
+}
+
+.mobile_navbar{
+    margin: 0 auto;
+}
+
+.mobile_nav_flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile_nav_toggle{
+    align-self: center;
+}
+
+.mobile_navlogo{
+    align-self: center;
+}
+
+.colcenter{
+    text-align: center;
+}
+
+.active{
+    display: none;
+}
+
+
+
+@media screen and (min-width:720px) {
+
+    .mobile_navbar{
+        display: none;
+    }
+    .mobile_nav_item{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:720px) {
+
+
+    .navbar {
+        display: none;
+    }
+
+}
