@@ -1,4 +1,18 @@
 // 網頁大項設定
+
+    body{
+        background : -moz-linear-gradient(50% 4.24% -90deg,rgba(19, 28, 64, 1) 0%,rgba(18, 26, 60, 1) 24.89%,rgba(14, 21, 48, 1) 50%,rgba(8, 12, 28, 1) 75.14%,rgba(0, 0, 0, 1) 100%);
+	    background : -webkit-linear-gradient(-90deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+	    background : -webkit-gradient(linear,50% 4.24% ,50% 94.24% ,color-stop(0,rgba(19, 28, 64, 1) ),color-stop(0.2489,rgba(18, 26, 60, 1) ),color-stop(0.5,rgba(14, 21, 48, 1) ),color-stop(0.7514,rgba(8, 12, 28, 1) ),color-stop(1,rgba(0, 0, 0, 1) ));
+	    background : -o-linear-gradient(-90deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+	    background : -ms-linear-gradient(-90deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48,   1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+	    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#131C40', endColorstr='#000000' ,GradientType=0)";
+	    background : linear-gradient(180deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#131C40',endColorstr='#000000' , GradientType=0);
+    }
+    .container{
+        color:white;
+    }
 // 粗黑體.bold
 .B{
     font-weight: bold;
@@ -23,9 +37,15 @@
 .T{
     font-size:15px;
 }
+.R{
+    text-align: right;
+}
 // 文字取間距用.padding .line-height
 .LH{
-    line-height: 8px;
+    line-height: 10px;
+}
+.PL{
+    padding-left:15px;
 }
 .PD{
     padding-top:15px;
@@ -61,11 +81,10 @@ footer{
     background-color: $G;
 }
 
+//Page2部分
+
 .textbox{
     padding:15px;
-}
-.no-gutters{
-    padding-left:15px;
 }
 .poster img{
     width:100%;
@@ -80,4 +99,28 @@ footer{
     border-bottom: 1px solid;
     border-color: G;
     margin-bottom:15px;
+}
+
+//Page3部分
+
+.imgP3{
+    width:100%;
+    height:590px;
+    background-color:aqua; 
+}
+.circle{
+    width: 257px;
+    height:257px;
+    background-color: $G;
+    border-radius: 50%;
+    margin:0 15px;
+}
+.saquare{
+    width: 197px;
+    height:197px;
+    background-color: $G;
+    margin:0 10px;
+}   
+.textb{
+    margin-left:10px;
 }

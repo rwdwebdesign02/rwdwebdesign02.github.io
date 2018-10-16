@@ -1,3 +1,15 @@
+body {
+  background: -ms-linear-gradient(-90deg, #131c40 0%, #121a3c 24.89%, #0e1530 50%, #080c1c 75.14%, black 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#131C40', endColorstr='#000000' ,GradientType=0)";
+  background: -webkit-gradient(linear, left top, left bottom, from(#131c40), color-stop(24.89%, #121a3c), color-stop(50%, #0e1530), color-stop(75.14%, #080c1c), to(black));
+  background: linear-gradient(180deg, #131c40 0%, #121a3c 24.89%, #0e1530 50%, #080c1c 75.14%, black 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#131C40',endColorstr='#000000' , GradientType=0);
+}
+
+.container {
+  color: white;
+}
+
 .B {
   font-weight: bold;
 }
@@ -22,8 +34,16 @@
   font-size: 15px;
 }
 
+.R {
+  text-align: right;
+}
+
 .LH {
-  line-height: 8px;
+  line-height: 10px;
+}
+
+.PL {
+  padding-left: 15px;
 }
 
 .PD {
@@ -66,10 +86,6 @@ footer {
   padding: 15px;
 }
 
-.no-gutters {
-  padding-left: 15px;
-}
-
 .poster img {
   width: 100%;
 }
@@ -84,5 +100,30 @@ footer {
   border-bottom: 1px solid;
   border-color: G;
   margin-bottom: 15px;
+}
+
+.imgP3 {
+  width: 100%;
+  height: 590px;
+  background-color: aqua;
+}
+
+.circle {
+  width: 257px;
+  height: 257px;
+  background-color: gray;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+
+.saquare {
+  width: 197px;
+  height: 197px;
+  background-color: gray;
+  margin: 0 10px;
+}
+
+.textb {
+  margin-left: 10px;
 }
 /*# sourceMappingURL=pagesCSS.css.map */
