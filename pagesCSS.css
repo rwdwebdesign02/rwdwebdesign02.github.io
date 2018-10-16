@@ -10,8 +10,12 @@
   font-size: 17px;
 }
 
-.text {
+.T {
   font-size: 15px;
+}
+
+.F {
+  font-size: 12px;
 }
 
 .pad {
@@ -42,31 +46,27 @@ footer {
   background-color: gray;
 }
 
-.movies {
-  background-color: black;
+.PD {
+  padding: 15px;
 }
 
-.movieBoxA {
-  background-color: burlywood;
-}
-
-.movieBoxB {
-  background-color: red;
-}
-
-.poster {
-  background-color: green;
-}
-
-.textbox {
-  background-color: yellow;
+.poster img {
+  width: 100%;
 }
 
 .P1_title {
-  background-color: aqua;
+  margin-top: 15px;
+  border-color: gray;
 }
 
 .P1_text {
-  background-color: blue;
+  padding-top: 30px;
+  background-color: lightblue;
+}
+
+.smalltitle {
+  padding-bottom: 15px;
+  border-bottom: 1px solid;
+  border-color: gray;
 }
 /*# sourceMappingURL=pagesCSS.css.map */
