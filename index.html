@@ -1,14 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh_tw">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <title>日日新戲院</title>
+
+    <style>
+        body {
+            margin: 0;
+            /* background-image: linear-gradient(#121C40 66%, black); */
+            background: -moz-linear-gradient(50% 4.24% -90deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+            background: -webkit-linear-gradient(-90deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+            background: -webkit-gradient(linear, 50% 4.24%, 50% 94.24%, color-stop(0, rgba(19, 28, 64, 1)), color-stop(0.2489, rgba(18, 26, 60, 1)), color-stop(0.5, rgba(14, 21, 48, 1)), color-stop(0.7514, rgba(8, 12, 28, 1)), color-stop(1, rgba(0, 0, 0, 1)));
+            background: -o-linear-gradient(-90deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+            background: -ms-linear-gradient(-90deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#131C40', endColorstr='#000000' ,GradientType=0)";
+            background: linear-gradient(180deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#131C40', endColorstr='#000000', GradientType=0);
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: Microsoft JhengHei;
+        }
+
+        .index-nav {
+            width: 350px;
+
+            position: relative;
+            min-height: 100vh;
+        }
+
+        .nav-top {
+            width: 100%;
+            /* background-color: aqua; */
+        }
+
+        .logo-box {
+            padding: 33px 49px 10px 49px;
+
+        }
+
+        .index-logo {
+            width: 100%;
+            /* display: block; */
+
+            /* margin:37px 49px; */
+        }
+
+        .nav-center div {
+            /* width: 80%; */
+            /* background-color: slategray; */
+            text-align: center;
+            margin: 14px auto;
+            padding: 19px 49px;
+        }
+
+        .nav-center-link {
+            border-radius: 2px;
+            background-image: linear-gradient(to right, #DF6967, #AE3D6B);
+            color: rgba(255, 255, 255, 0.8);
+            letter-spacing: 5px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .nav-bottom {
+            position: absolute;
+            bottom: 12.06%;
+            width: 100%;
+            /* background-color: springgreen; */
+        }
+
+        .icon {
+            float: left;
+            margin: 4.5px 49px;
+            line-height: 36px;
+
+        }
+
+
+
+        .icon1 {
+            float: left;
+            color: white;
+        }
+
+
+
+        .icon2 {
+            float: left;
+            clear: left;
+            margin-top: 15px;
+            color: white;
+        }
+
+        .copyright {
+            float: left;
+            margin-bottom: 0;
+            line-height: 15px;
+        }
+
+        .copyright p {
+            color: white;
+            font-size: 12px;
+        }
+    </style>
 </head>
+
 <body>
-    
-<h1>hi</h1>
+    <nav class="index-nav">
+
+        <div class="nav-top">
+            <div class="logo-box">
+                <img class="index-logo" src="img/logo.png" alt="LOGO">
+            </div>
+        </div>
+
+        <div class="nav-center">
+            <div class="nav-center-content">
+
+                <a href="">
+
+                    <div class="nav-center-link">
+                        <i class="fab fa-accessible-icon"></i>
+                        即將上映
+                    </div>
+                </a>
+
+
+                <a href="">
+                    <div class="nav-center-link">
+                        <i class="fab fa-accessible-icon"></i>
+                        售票資訊
+                    </div>
+                </a>
+                <a href="">
+                    <div class="nav-center-link">
+                        <i class="fab fa-accessible-icon"></i>
+                        活動公告
+                    </div>
+                </a>
+                <a href="">
+                    <div class="nav-center-link">
+                        <i class="fab fa-accessible-icon"></i>
+                        影廳介紹
+                    </div>
+                </a>
+                <a href="">
+                    <div class="nav-center-link">
+                        <i class="fab fa-accessible-icon"></i>
+                        關於日新
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-bottom">
+            <div class="icon">
+                <a class="icon1" href="">
+                    <i class="fab fa-accessible-icon"></i>
+                </a>
+                <a class="icon2" href="">
+                    <i class="fab fa-accessible-icon"></i>
+                </a>
+            </div>
+            <div class="copyright">
+                <p>| 地址 : 臺中市中區中華路一段58號</p>
+                <p>| 電話 : 04-22236757</p>
+                <p>Copyright C 2018 sunrizecinema Inc.</p>
+            </div>
+        </div>
+    </nav>
 
 </body>
+
 </html>
