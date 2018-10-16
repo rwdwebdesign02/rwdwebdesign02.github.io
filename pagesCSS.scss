@@ -1,35 +1,20 @@
 // 網頁大項設定
-// 粗黑體.bold
-.B{
-    font-weight: bold;
-}
-// 置中.center
 .C{
     text-align:center;
 }
-// 字體大小(大多Footer使用).footer
-.F{
-    font-size:12px;
-}
-// 字體大小(大標專用).large
 .L{
     font-size:26px;
 }
-// 字體大小(小標專用).medium
 .M{
     font-size:17px;
 }
-// 字體大小(文本專用).text
 .T{
     font-size:15px;
 }
-// 文字取間距用.padding .line-height
-.LH{
-    line-height: 8px;
+.F{
+    font-size:12px;
 }
-.PD{
-    padding-top:15px;
-}
+
 .pad{
     width:100%;
     height:155px;
@@ -42,11 +27,6 @@
     width:100%;
     height:30px;
 }
-//顏色變數
-$G: gray;
-.FC{
-    color: $G
-}
 
 // 網頁細項設定
 nav{
@@ -58,26 +38,27 @@ nav{
 footer{
     width:100%;
     height:180px;
-    background-color: $G;
+    background-color: gray;
 }
-
-.textbox{
+.PD{
     padding:15px;
-}
-.no-gutters{
-    padding-left:15px;
 }
 .poster img{
     width:100%;
 }
 
 .P1_title{
+    
     margin-top:15px;
+    border-color:gray;
+}
+
+.P1_text{
+    padding-top:30px;
+    background-color: lightblue;
 }
 .smalltitle{
-    width:100%;
     padding-bottom:15px;
     border-bottom: 1px solid;
-    border-color: G;
-    margin-bottom:15px;
+    border-color: gray;
 }
