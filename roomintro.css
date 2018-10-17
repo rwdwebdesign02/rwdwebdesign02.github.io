@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    font-family: "微軟正黑體"
+}
+
+body{
+    background-image: linear-gradient(#121c40,#000000);
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.title{
+    
+    padding: 155px 0px 60px 0px;
+   
+}
+
+.title h1{
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    background-image: url("/img/all/all_prev_icon.png");
+    left: 15px;
+    right: auto;
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    background-image: url("/img/all/all_next_icon.png");
+    right: 15px;
+    left: auto;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #de6967;
+}
+
+.swiper-pagination-bullet-active-next {
+    opacity: 1;
+    background:#ad3d6b;
+}
+
+.swiper-pagination-bullet-active-next-next {
+    opacity: 1;
+    background:#ad3d6b;
+}
+
+.swiper-pagination-bullet-active-prev {
+    opacity: 1;
+    background:#ad3d6b;
+}
+
+.swiper-pagination-bullet-active-prev-prev {
+    opacity: 1;
+    background:#ad3d6b;
+}
+
+.atten_flex{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.atten_item{
+    width: 20%;
+}
+
+.atten_item img{
+    width: 100%;
+    padding-right: 20px;
+}
+
+.atten_flex p{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.intro_banner{
+    width: 100%;
+}
+
+
+
+@media screen and (max-width:720px) {
+   
+    .atten_flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .atten_item{
+        position: relative;
+        width: 50%;
+}
+
+    .atten_item img {
+        width: 80%;
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+}
+
+    .atten_item p{
+        font-size: 14px;
+    }
+
+   
+
+}

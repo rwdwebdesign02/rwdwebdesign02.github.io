@@ -1,0 +1,55 @@
+
+*{
+    box-sizing: border-box;
+    font-family: "微軟正黑體";
+    color: white;
+}
+
+.paddingTop{
+    padding-top: 155px;
+}
+
+.container_bgcolor{
+    background-image: linear-gradient(to right, #de6967 , #ae3d6a); 
+}
+
+.footer_flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 0;
+}
+
+.footer_icon{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footer_icon img{
+    padding-left: 7px;
+}
+
+
+@media screen and (max-width:720px) {
+
+    .paddingTop{
+        padding-top: 80px;
+    }
+    
+
+    .footer_logo{
+        display: none;
+    }
+
+    .iconimg{
+        display: flex;
+        flex-direction:column; 
+        padding-bottom: 10px;
+    
+    }
+
+    .footer_flex p{
+        font-size: 14px;
+    }
+
+}
