@@ -9,7 +9,8 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
     <title>日日新戲院</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <style>
         body {
             margin: 0;
@@ -49,7 +50,6 @@
 
         .logo-box {
             padding: 33px 49px 10px 49px;
-
         }
 
         .index-logo {
@@ -152,7 +152,7 @@
             padding-bottom: 10px;
         }
 
-       
+
         .banner-box {
             /* background-color: #DF6967; */
             height: 100%;
@@ -162,6 +162,11 @@
         .swiper-container {
             width: 100%;
             height: 100%;
+        }
+
+        .swiper-slide {
+            display: inline;
+            width: initial;
         }
 
         .swiper-slide:nth-child(odd) {
@@ -183,6 +188,86 @@
         .swiper-scrollbar-drag {
             background-color: white;
             opacity: 0.87;
+        }
+
+        .position-box {
+            /* position: relative; */
+        }
+
+        .index-content-box {
+            z-index: 99;
+            float: right;
+        }
+
+        .index-banner-content {
+            display: none;
+        }
+
+        .index-banner-content.active {
+            /* border-radius: 5px; */
+            display: block;
+            /* opacity: 1; */
+            /* position: absolute; */
+            /* right: 0; */
+            float: right;
+            width: 800px;
+            height: 520px;
+            /*---------------height之後要修正 ---------------------*/
+            padding: 20px;
+            overflow-y: scroll;
+            background-color: rgb(255, 255, 255);
+        }
+
+
+        .text-box {
+            display: flex;
+            align-items: flex-end;
+
+        }
+
+        .text-box h1 {
+            margin: 0;
+        }
+
+        .text-box p {
+            margin: auto auto 3px 10px;
+        }
+
+        .line {
+            width: 41.5%;
+            border-bottom: 5px solid;
+            padding-bottom: 5px;
+            margin-bottom: 30px;
+        }
+
+        .video-container {
+
+            position: relative;
+
+            padding-bottom: 56.25%;
+
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+            margin-top: 30px;
+        }
+
+        .video-container iframe,
+
+        .video-container object,
+
+        .video-container embed {
+
+            position: absolute;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            /* height: 80%; */
+
         }
     </style>
 </head>
@@ -262,7 +347,32 @@
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="img/now/00.jpg" alt="">
+                                <div id="position-box" class="position-box">
+
+                                    <div id="content" class="index-banner-content animated fadeInLeft faster">
+                                        <div class="text-box">
+                                            <h1><b>猛毒</b></h1>
+                                            <p>venom</p>
+                                        </div>
+                                        <div class="line">
+                                            <p>上映日期 | 2018/11/23</p>
+                                            <p>類型 | 奇幻/科幻、動作、懸疑、驚悚、恐怖</p>
+                                        </div>
+                                        <div>
+                                            <p>導演 | 魯賓弗萊舍(Ruben Samuel Fleischer)</p>
+                                            <p>湯姆哈迪 (Tom Hardy)、蜜雪兒威廉斯(Michelle Williams)、伍迪哈里遜(Woody Harrelson)</p>
+                                        </div>
+                                        <div class=video-container>
+                                            <iframe width="480" height="360" src="https://www.youtube.com/embed/iymJJlzThu0"
+                                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="index-content-box">
+                                        <img id="index-img1" class="index-img" src="img/now/00.jpg" alt="">
+                                    </div>
+                                </div>
                             </div>
                             <div class="swiper-slide">
                                 <img src="img/now/01.jpg" alt="">
@@ -308,25 +418,49 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js">
     </script>
     <script>
+
         var swiper = new Swiper('.swiper-container', {
             // direction: 'vertical',
-            slidesPerView: 3.5,
-            spaceBetween: 0,
+            slidesPerView: "auto",
+            spaceBetween: 50,
             mousewheel: true,
             freeMode: true,
-            // mousewheelSensitivity: 0,
-            // mousewheelReleaseOnEdges:true,
-
             // loop:true,
-            // pagination: {
-            //   el: '.swiper-pagination',
-            //   clickable: true,
-            // },
             scrollbar: {
                 el: '.swiper-scrollbar',
                 hide: true,
             },
         });
+
+        // swiper.mousewheel.disable();
+
+        var indexImg1 = document.querySelector('#index-img1');
+        var indexBannerContent = document.querySelector('#content');
+
+
+
+        indexImg1.onclick = function () {
+            console.log(987)
+            // if (indexBannerContent == none){
+            // indexBannerContent2.classList.remove("active");
+            indexBannerContent.classList.toggle("active");
+        }
+
+
+        indexBannerContent.onmouseover = function () {
+            swiper.mousewheel.disable();
+            console.log(1)
+        }
+        indexBannerContent.onmouseout = function () {
+            swiper.mousewheel.enable();
+            // indexBannerContent.classList.remove("active");
+            console.log(0)
+        }
+        // positionBox.onmouseout = function () {
+        //     console.log(9999)
+        //     indexBannerContent2.classList.add("active");
+        //     // indexBannerContent.classList.remove("active")
+        // }
     </script>
 </body>
 
