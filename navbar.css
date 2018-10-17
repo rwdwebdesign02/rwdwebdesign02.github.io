@@ -99,6 +99,14 @@ body{
 .mobile_nav_item{
     display: none;
     padding-top: 105px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(#121c40, #000000);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 98;
+   
 }
 
 .active{
