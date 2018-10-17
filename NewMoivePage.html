@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
     <link rel="stylesheet" href="./pagesCSS.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -119,7 +120,17 @@
 
     <div class="Phone">
         <nav></nav>
-        <div class="Pimg"></div>
+        <div class="Pimg">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/img/Page2/03-即將上映/即將上映-01.png" alt=""></div>
+                    <div class="swiper-slide"><img src="/img/Page2/03-即將上映/即將上映-01.png" alt=""></div>
+                    <div class="swiper-slide"><img src="/img/Page2/03-即將上映/即將上映-01.png" alt=""></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
         <div class="phone_container">
             <div class="Ppad"></div>
             <div class="B C phone_T">即將上映</div>
@@ -133,42 +144,62 @@
                 </div>
             </div>
             <div class="CT row">
-                    <div class="col-6">
-                        <img class="w-100" src="/img/Page2/00-現正熱映/02-凸槌特派員.jpg" alt="">
-                    </div>
-                    <div class="col-6">
-                        <img class="w-100" src="/img/Page2/00-現正熱映/03-滴答屋.jpg" alt="">
-                    </div>
+                <div class="col-6">
+                    <img class="w-100" src="/img/Page2/00-現正熱映/02-凸槌特派員.jpg" alt="">
                 </div>
-                <div class="CT row">
-                        <div class="col-6">
-                            <img class="w-100" src="/img/Page2/00-現正熱映/04-人肉搜索.jpg" alt="">
-                        </div>
-                        <div class="col-6">
-                            <img class="w-100" src="/img/Page2/00-現正熱映/05-機器戰犬.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="CT row">
-                            <div class="col-6">
-                                <img class="w-100" src="/img/Page2/00-現正熱映/06-無雙.jpg" alt="">
-                            </div>
-                            <div class="col-6">
-                                <img class="w-100" src="/img/Page2/00-現正熱映/07-神鬼拍檔.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="CT row">
-                                <div class="col-6">
-                                    <img class="w-100" src="/img/Page2/00-現正熱映/08-一週斃命.jpg" alt="">
-                                </div>
-                                <div class="col-6">
-                                    <img class="w-100" src="/img/Page2/00-現正熱映/09-一屍到底.jpg" alt="">
-                                </div>
-                            </div>         
+                <div class="col-6">
+                    <img class="w-100" src="/img/Page2/00-現正熱映/03-滴答屋.jpg" alt="">
+                </div>
+            </div>
+            <div class="CT row">
+                <div class="col-6">
+                    <img class="w-100" src="/img/Page2/00-現正熱映/04-人肉搜索.jpg" alt="">
+                </div>
+                <div class="col-6">
+                    <img class="w-100" src="/img/Page2/00-現正熱映/05-機器戰犬.jpg" alt="">
+                </div>
+            </div>
+            <div class="CT row">
+                <div class="col-6">
+                    <img class="w-100" src="/img/Page2/00-現正熱映/06-無雙.jpg" alt="">
+                </div>
+                <div class="col-6">
+                    <img class="w-100" src="/img/Page2/00-現正熱映/07-神鬼拍檔.jpg" alt="">
+                </div>
+            </div>
+            <div class="CT row">
+                <div class="col-6">
+                    <img class="w-100" src="/img/Page2/00-現正熱映/08-一週斃命.jpg" alt="">
+                </div>
+                <div class="col-6">
+                    <img class="w-100" src="/img/Page2/00-現正熱映/09-一屍到底.jpg" alt="">
+                </div>
+            </div>
         </div>
     </div>
-    <div class="Ppad"></div> 
+    <div class="Ppad"></div>
+
     <footer></footer>
+
 </body>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+<!-- 無限循環swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
 
 </html>
