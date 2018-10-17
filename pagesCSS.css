@@ -11,8 +11,26 @@ body {
   font-family: Microsoft JhengHei;
 }
 
-.img {
-  width: 100%;
+.phone_container {
+  color: white;
+  font-family: Microsoft JhengHei;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.phone_container2 {
+  color: white;
+  font-family: Microsoft JhengHei;
+  max-width: 560;
+  margin: center;
+}
+
+.all {
+  display: block;
+}
+
+.Phone {
+  display: none;
 }
 
 .B {
@@ -43,8 +61,24 @@ body {
   text-align: right;
 }
 
+.phone_T {
+  font-size: 50px;
+}
+
+.phone_I {
+  font-size: 20px;
+}
+
+.phone_InfoT {
+  font-size: 32px;
+}
+
+.phone_InfoW {
+  font-size: 24px;
+}
+
 .LH {
-  line-height: 10px;
+  line-height: 15px;
 }
 
 .PL {
@@ -53,6 +87,10 @@ body {
 
 .PT {
   padding-top: 15px;
+}
+
+.PD {
+  padding-bottom: 15px;
 }
 
 .pad {
@@ -68,6 +106,18 @@ body {
 .spacing {
   width: 100%;
   height: 30px;
+}
+
+.Ppad {
+  padding: 80px;
+}
+
+.Ppad2 {
+  padding: 25px;
+}
+
+.Ppad3 {
+  padding: 7px;
 }
 
 .FC {
@@ -91,10 +141,6 @@ footer {
   padding: 15px;
 }
 
-.poster img {
-  width: 100%;
-}
-
 .P1_title {
   margin-top: 15px;
 }
@@ -104,11 +150,6 @@ footer {
   padding-bottom: 15px;
   border-bottom: 1px solid;
   margin-bottom: 15px;
-}
-
-.imgP3 {
-  width: 100%;
-  height: 590px;
 }
 
 .circle {
@@ -126,5 +167,35 @@ footer {
 
 .textb {
   margin-left: 10px;
+}
+
+@media screen and (max-width: 720px) {
+  .all {
+    display: none;
+  }
+  .Phone {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    height: 107 px;
+    margin-top: 30px;
+    background-color: aqua;
+  }
+  footer {
+    width: 100%;
+    height: 205px;
+    background-color: gray;
+  }
+  .Pimg {
+    width: 100%;
+    height: 324px;
+  }
+  .CT {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 35px;
+  }
 }
 /*# sourceMappingURL=pagesCSS.css.map */
