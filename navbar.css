@@ -114,7 +114,7 @@ body{
 
 
 
-@media screen and (min-width:721px) {
+@media screen and (min-width:993px) {
 
     .mobile_navbar{
         display: none;
@@ -125,7 +125,7 @@ body{
 }
 
 
-@media screen and (max-width:720px) {
+@media screen and (max-width:992px) {
 
     .mobile_navbar{
         padding: 40px 0;
