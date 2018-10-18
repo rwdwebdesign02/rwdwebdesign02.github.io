@@ -132,7 +132,7 @@
 
         .banner-top {
             position: relative;
-            height: 195px;
+            height: 135px;
             /* background-color: rgba(240, 248, 255, 0.274); */
         }
 
@@ -149,6 +149,7 @@
             height: 75vh;
             /* background-color: rgba(255, 255, 255, 0.452); */
             position: relative;
+            margin-top: 23px;
             padding-bottom: 10px;
         }
 
@@ -169,15 +170,15 @@
             width: initial;
         }
 
-        .swiper-slide:nth-child(odd) {
-            /* transform: translate(0,0); */
-
-        }
-
-        .swiper-slide:nth-child(even) {
+        .items-swiper-slide:nth-child(even) {
             /* transform: translate(0,20%); */
             position: relative;
             top: 20%;
+        }
+
+        .swiper-slide.active {
+            position: relative;
+            top: 0;
         }
 
         .swiper-scrollbar {
@@ -190,34 +191,39 @@
             opacity: 0.87;
         }
 
-        .position-box {
-            /* position: relative; */
-        }
-
         .index-content-box {
-            z-index: 99;
             float: right;
         }
 
-        .index-banner-content {
+        .items-banner-content {
+            float: right;
             display: none;
         }
 
-        .index-banner-content.active {
+        .items-banner-content.active {
             /* border-radius: 5px; */
             display: block;
             /* opacity: 1; */
             /* position: absolute; */
             /* right: 0; */
             float: right;
-            width: 800px;
-            height: 520px;
+            /* width: 800px; */
+            height: 100%;
             /*---------------height之後要修正 ---------------------*/
             padding: 20px;
             overflow-y: scroll;
             background-color: rgb(255, 255, 255);
         }
 
+        .items-img.active {
+            height: 75vh;
+            float: right;
+        }
+
+        .item-swiper-slide.active {
+            position: relative;
+            top: 0;
+        }
 
         .text-box {
             display: flex;
@@ -269,6 +275,10 @@
             /* height: 80%; */
 
         }
+
+        .bbb {
+            width: 900px;
+        }
     </style>
 </head>
 
@@ -278,7 +288,7 @@
 
             <div class="nav-top">
                 <div class="logo-box">
-                    <img class="index-logo" src="img/logo.png" alt="LOGO">
+                    <img class="index-logo" src="img/all/nav_weblogo_0.png" alt="LOGO">
                 </div>
             </div>
 
@@ -347,60 +357,262 @@
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div id="position-box" class="position-box">
-
-                                    <div id="content" class="index-banner-content animated fadeInLeft faster">
-                                        <div class="text-box">
-                                            <h1><b>猛毒</b></h1>
-                                            <p>venom</p>
-                                        </div>
-                                        <div class="line">
-                                            <p>上映日期 | 2018/11/23</p>
-                                            <p>類型 | 奇幻/科幻、動作、懸疑、驚悚、恐怖</p>
-                                        </div>
-                                        <div>
-                                            <p>導演 | 魯賓弗萊舍(Ruben Samuel Fleischer)</p>
-                                            <p>湯姆哈迪 (Tom Hardy)、蜜雪兒威廉斯(Michelle Williams)、伍迪哈里遜(Woody Harrelson)</p>
-                                        </div>
-                                        <div class=video-container>
-                                            <iframe width="480" height="360" src="https://www.youtube.com/embed/iymJJlzThu0"
-                                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-                                        </div>
+                                <!-- <div id="position-box" class="position-box"> -->
+                                <div id="content" class="items-banner-content animated fadeInLeft faster">
+                                    <div class="text-box">
+                                        <h1><b>猛毒</b></h1>
+                                        <p>venom</p>
                                     </div>
-
-                                    <div class="index-content-box">
-                                        <img id="index-img1" class="index-img" src="img/now/00.jpg" alt="">
+                                    <div class="line">
+                                        <p>上映日期 | 2018/11/23</p>
+                                        <p>類型 | 奇幻/科幻、動作、懸疑、驚悚、恐怖</p>
                                     </div>
+                                    <div>
+                                        <p>導演 | 魯賓弗萊舍(Ruben Samuel Fleischer)</p>
+                                        <p>湯姆哈迪 (Tom Hardy)、蜜雪兒威廉斯(Michelle Williams)、伍迪哈里遜(Woody Harrelson)</p>
+                                    </div>
+                                    <div class=video-container>
+                                        <iframe height="500" src="https://www.youtube.com/embed/iymJJlzThu0"
+                                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                                    </div>
+                                </div>
+
+                                <div id="img-box1" class="index-content-box">
+                                    <img class="items-img" src="img/now/00.jpg" alt="">
+                                </div>
+                                <!-- </div> -->
+                            </div>
+                            <div class="swiper-slide items-swiper-slide">
+                                <div id="content1" class="items-banner-content animated fadeInLeft faster">
+                                    <div class="text-box">
+                                        <h1><b>猛毒</b></h1>
+                                        <p>venom</p>
+                                    </div>
+                                    <div class="line">
+                                        <p>上映日期 | 2018/11/23</p>
+                                        <p>類型 | 奇幻/科幻、動作、懸疑、驚悚、恐怖</p>
+                                    </div>
+                                    <div>
+                                        <p>導演 | 魯賓弗萊舍(Ruben Samuel Fleischer)</p>
+                                        <p>湯姆哈迪 (Tom Hardy)、蜜雪兒威廉斯(Michelle Williams)、伍迪哈里遜(Woody Harrelson)</p>
+                                    </div>
+                                    <div class=video-container>
+                                        <iframe height="500" src="https://www.youtube.com/embed/iymJJlzThu0"
+                                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                                    </div>
+                                </div>
+
+                                <div class="index-content-box">
+                                    <img class="items-img" src="img/now/01.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div id="content2" class="items-banner-content animated fadeInLeft faster">
+                                    <div class="text-box">
+                                        <h1><b>猛毒</b></h1>
+                                        <p>venom</p>
+                                    </div>
+                                    <div class="line">
+                                        <p>上映日期 | 2018/11/23</p>
+                                        <p>類型 | 奇幻/科幻、動作、懸疑、驚悚、恐怖</p>
+                                    </div>
+                                    <div>
+                                        <p>導演 | 魯賓弗萊舍(Ruben Samuel Fleischer)</p>
+                                        <p>湯姆哈迪 (Tom Hardy)、蜜雪兒威廉斯(Michelle Williams)、伍迪哈里遜(Woody Harrelson)</p>
+                                    </div>
+                                    <div class=video-container>
+                                        <iframe height="500" src="https://www.youtube.com/embed/iymJJlzThu0"
+                                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                                    </div>
+                                </div>
+
+                                <div class="index-content-box">
+                                    <img class="items-img" src="img/now/02.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide items-swiper-slide">
+                                <div id="content3" class="items-banner-content animated fadeInLeft faster">
+                                    <div class="text-box">
+                                        <h1><b>猛毒</b></h1>
+                                        <p>venom</p>
+                                    </div>
+                                    <div class="line">
+                                        <p>上映日期 | 2018/11/23</p>
+                                        <p>類型 | 奇幻/科幻、動作、懸疑、驚悚、恐怖</p>
+                                    </div>
+                                    <div>
+                                        <p>導演 | 魯賓弗萊舍(Ruben Samuel Fleischer)</p>
+                                        <p>湯姆哈迪 (Tom Hardy)、蜜雪兒威廉斯(Michelle Williams)、伍迪哈里遜(Woody Harrelson)</p>
+                                    </div>
+                                    <div class=video-container>
+                                        <iframe height="500" src="https://www.youtube.com/embed/iymJJlzThu0"
+                                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                                    </div>
+                                </div>
+
+                                <div class="index-content-box">
+                                    <img class="items-img" src="img/now/03.jpg" alt="">
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="img/now/01.jpg" alt="">
+                                <div id="content4" class="items-banner-content animated fadeInLeft faster">
+                                    <div class="text-box">
+                                        <h1><b>猛毒</b></h1>
+                                        <p>venom</p>
+                                    </div>
+                                    <div class="line">
+                                        <p>上映日期 | 2018/11/23</p>
+                                        <p>類型 | 奇幻/科幻、動作、懸疑、驚悚、恐怖</p>
+                                    </div>
+                                    <div>
+                                        <p>導演 | 魯賓弗萊舍(Ruben Samuel Fleischer)</p>
+                                        <p>湯姆哈迪 (Tom Hardy)、蜜雪兒威廉斯(Michelle Williams)、伍迪哈里遜(Woody Harrelson)</p>
+                                    </div>
+                                    <div class=video-container>
+                                        <iframe height="500" src="https://www.youtube.com/embed/iymJJlzThu0"
+                                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                                    </div>
+                                </div>
+
+                                <div class="index-content-box">
+                                    <img class="items-img" src="img/now/04.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide items-swiper-slide">
+                                <div id="content5" class="items-banner-content animated fadeInLeft faster">
+                                    <div class="text-box">
+                                        <h1><b>猛毒</b></h1>
+                                        <p>venom</p>
+                                    </div>
+                                    <div class="line">
+                                        <p>上映日期 | 2018/11/23</p>
+                                        <p>類型 | 奇幻/科幻、動作、懸疑、驚悚、恐怖</p>
+                                    </div>
+                                    <div>
+                                        <p>導演 | 魯賓弗萊舍(Ruben Samuel Fleischer)</p>
+                                        <p>湯姆哈迪 (Tom Hardy)、蜜雪兒威廉斯(Michelle Williams)、伍迪哈里遜(Woody Harrelson)</p>
+                                    </div>
+                                    <div class=video-container>
+                                        <iframe height="500" src="https://www.youtube.com/embed/iymJJlzThu0"
+                                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                                    </div>
+                                </div>
+
+                                <div class="index-content-box">
+                                    <img class="items-img" src="img/now/05.jpg" alt="">
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="img/now/02.jpg" alt="">
+                                <div id="content6" class="items-banner-content animated fadeInLeft faster">
+                                    <div class="text-box">
+                                        <h1><b>猛毒</b></h1>
+                                        <p>venom</p>
+                                    </div>
+                                    <div class="line">
+                                        <p>上映日期 | 2018/11/23</p>
+                                        <p>類型 | 奇幻/科幻、動作、懸疑、驚悚、恐怖</p>
+                                    </div>
+                                    <div>
+                                        <p>導演 | 魯賓弗萊舍(Ruben Samuel Fleischer)</p>
+                                        <p>湯姆哈迪 (Tom Hardy)、蜜雪兒威廉斯(Michelle Williams)、伍迪哈里遜(Woody Harrelson)</p>
+                                    </div>
+                                    <div class=video-container>
+                                        <iframe height="500" src="https://www.youtube.com/embed/iymJJlzThu0"
+                                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                                    </div>
+                                </div>
+
+                                <div class="index-content-box">
+                                    <img class="items-img" src="img/now/06.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide items-swiper-slide">
+                                <div id="content7" class="items-banner-content animated fadeInLeft faster">
+                                    <div class="text-box">
+                                        <h1><b>猛毒</b></h1>
+                                        <p>venom</p>
+                                    </div>
+                                    <div class="line">
+                                        <p>上映日期 | 2018/11/23</p>
+                                        <p>類型 | 奇幻/科幻、動作、懸疑、驚悚、恐怖</p>
+                                    </div>
+                                    <div>
+                                        <p>導演 | 魯賓弗萊舍(Ruben Samuel Fleischer)</p>
+                                        <p>湯姆哈迪 (Tom Hardy)、蜜雪兒威廉斯(Michelle Williams)、伍迪哈里遜(Woody Harrelson)</p>
+                                    </div>
+                                    <div class=video-container>
+                                        <iframe height="500" src="https://www.youtube.com/embed/iymJJlzThu0"
+                                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                                    </div>
+                                </div>
+
+                                <div class="index-content-box">
+                                    <img class="items-img" src="img/now/07.jpg" alt="">
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="img/now/03.jpg" alt="">
+                                <div id="content8" class="items-banner-content animated fadeInLeft faster">
+                                    <div class="text-box">
+                                        <h1><b>猛毒</b></h1>
+                                        <p>venom</p>
+                                    </div>
+                                    <div class="line">
+                                        <p>上映日期 | 2018/11/23</p>
+                                        <p>類型 | 奇幻/科幻、動作、懸疑、驚悚、恐怖</p>
+                                    </div>
+                                    <div>
+                                        <p>導演 | 魯賓弗萊舍(Ruben Samuel Fleischer)</p>
+                                        <p>湯姆哈迪 (Tom Hardy)、蜜雪兒威廉斯(Michelle Williams)、伍迪哈里遜(Woody Harrelson)</p>
+                                    </div>
+                                    <div class=video-container>
+                                        <iframe height="500" src="https://www.youtube.com/embed/iymJJlzThu0"
+                                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                                    </div>
+                                </div>
+
+                                <div class="index-content-box">
+                                    <img class="items-img" src="img/now/00.jpg" alt="">
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="img/now/04.jpg" alt="">
+                            <div class="swiper-slide items-swiper-slide">
+                                <div id="content9" class="items-banner-content animated fadeInLeft faster">
+                                    <div class="text-box">
+                                        <h1><b>猛毒</b></h1>
+                                        <p>venom</p>
+                                    </div>
+                                    <div class="line">
+                                        <p>上映日期 | 2018/11/23</p>
+                                        <p>類型 | 奇幻/科幻、動作、懸疑、驚悚、恐怖</p>
+                                    </div>
+                                    <div>
+                                        <p>導演 | 魯賓弗萊舍(Ruben Samuel Fleischer)</p>
+                                        <p>湯姆哈迪 (Tom Hardy)、蜜雪兒威廉斯(Michelle Williams)、伍迪哈里遜(Woody Harrelson)</p>
+                                    </div>
+                                    <div class=video-container>
+                                        <iframe height="500" src="https://www.youtube.com/embed/iymJJlzThu0"
+                                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                                    </div>
+                                </div>
+
+                                <div class="index-content-box">
+                                    <img class="items-img" src="img/now/01.jpg" alt="">
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="img/now/05.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/now/06.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/now/07.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/now/00.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/now/01.jpg" alt="">
-                            </div>
+
+                            <div class="swiper-slide bbb"></div>
+
+
                         </div>
                         <!-- Add Scrollbar -->
                         <div class="swiper-pagination"></div>
@@ -417,6 +629,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js">
     </script>
+
     <script>
 
         var swiper = new Swiper('.swiper-container', {
@@ -432,29 +645,54 @@
             },
         });
 
-        // swiper.mousewheel.disable();
 
-        var indexImg1 = document.querySelector('#index-img1');
-        var indexBannerContent = document.querySelector('#content');
+        var itemsImg = document.querySelectorAll(".items-img");
+        var SwiperSlide = document.querySelectorAll(".swiper-slide");
+        var itemsBannerContent = document.querySelectorAll(".items-banner-content");
 
+        itemsImg.forEach(function (element, index) {
+            element.onclick = function () {
+                //close all
+                closeAllContent();
+                closeAllImg();
+                //image onclick,zoom in ,swiper change, show content 
+                element.classList.toggle("active");
+                swiper.slideTo(index);
 
+                //find content
+                console.log(itemsBannerContent[index]);
+                itemsBannerContent[index].classList.toggle("active");
 
-        indexImg1.onclick = function () {
-            console.log(987)
-            // if (indexBannerContent == none){
-            // indexBannerContent2.classList.remove("active");
-            indexBannerContent.classList.toggle("active");
+                //img cancle top20%
+                // if (index % 2 == 1) {
+                //     console.log(9989)
+                    
+                // }
+SwiperSlide[index].classList.toggle("active");
+
+            }
+        })
+
+        function closeAllContent() {
+            itemsBannerContent.forEach(function (element, index) {
+                element.classList.remove("active");
+            })
         }
 
+        function closeAllImg() {
+            itemsImg.forEach(function (element, index) {
+                element.classList.remove("active");
+            })
+        }
 
-        indexBannerContent.onmouseover = function () {
+        itemsBannerContent.onmouseover = function () {
             swiper.mousewheel.disable();
-            console.log(1)
+            // console.log(1)
         }
-        indexBannerContent.onmouseout = function () {
+        itemsBannerContent.onmouseout = function () {
             swiper.mousewheel.enable();
             // indexBannerContent.classList.remove("active");
-            console.log(0)
+            // console.log(0)
         }
         // positionBox.onmouseout = function () {
         //     console.log(9999)
@@ -462,6 +700,7 @@
         //     // indexBannerContent.classList.remove("active")
         // }
     </script>
+
 </body>
 
 </html>

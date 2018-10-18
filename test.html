@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+.big{
+    font-size: 78px;
+    background-color: aqua;
+}
+.min{
+    font-size: 180px;
+    background-color: brown;
+}
+</style>
+</head>
+
+<body>
+    <div class="items">AAAA</div>
+    <br>
+    <div class="items">BBBB</div>
+    <br>
+    <div class="items">CCCC</div>
+
+    <script>
+        var items = document.querySelectorAll(".items");
+        // console.log(items)
+        items.forEach(function (element, index) {
+            element.onclick = function () {
+                // console.log(index);
+                
+                    if (index == 1){
+                        // console.log(1111111111111111);
+                        element.classList.toggle ("big");
+                    }
+                    if (index == 0){
+                        // console.log(1111111111111111);
+                        element.classList.toggle ("min");
+                    }
+            }
+        })
+
+    </script>
+</body>
+
+</html>
