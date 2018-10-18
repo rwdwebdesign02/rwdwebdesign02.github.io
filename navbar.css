@@ -35,30 +35,21 @@ body{
     padding: 80px 20px 10px 20px;
     margin-left: 12px;
     display: inline-block;
+    background-size: 200% auto;
     color: white;
     background-color: #de6967;
-    background-image: linear-gradient(to right ,#de6967 , #ae3d6b);
-    /* background: -webkit-linear-gradient(to right,#de6967 , #ae3d6b); */
-    /* background: -moz-linear-gradient(to right,#de6967 , #ae3d6b); */
+    background-image: linear-gradient(to right ,#ae3d6b 0% , #de6967 51% ,#ae3d6b 100%);
+    background-position:right center;
+    text-transform: uppercase;
+    transition: 0.5s;
 }
 
-/* .nav_link:hover{
-    transition: 0.3s;
-    animation-name: example;
-    animation-duration: 1s;
-} */
+.nav_link:hover { 
+    background-position: left center; 
+    color: white;
+    text-decoration: none;
+}
 
-/* @keyframes example {
-    0%   {
-        background-image: linear-gradient(to right,#de6967 , #ae3d6b);
-    }
-    50%  {
-        background-image: linear-gradient(to right,#de6967 , #ae3d6b);
-    }
-    100% {
-        background-image: linear-gradient(to right,#de6967 , #ae3d6b);
-    }
-} */
 
 .mobile_navbar{
     margin: 0 auto;
