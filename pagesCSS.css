@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background: -ms-linear-gradient(-90deg, #131c40 0%, #121a3c 24.89%, #0e1530 50%, #080c1c 75.14%, black 100%);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#131C40', endColorstr='#000000' ,GradientType=0)";
@@ -145,6 +146,13 @@ footer {
 
 .TB {
   margin: 15px 45px 0px 30px;
+  width: 195px;
+}
+
+.TBR {
+  width: 195px;
+  margin-left: 30px;
+  margin-top: 15px;
 }
 
 .ST {
@@ -154,10 +162,60 @@ footer {
   margin-bottom: 15px;
 }
 
-.MP {
-  width: 360px;
-  height: 570px;
-  float: left;
+.MP0 {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/img/Page2/00-現正熱映/00-一個巨星的誕生.jpg");
+}
+
+.MP1 {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/img/Page2/00-現正熱映/01-猛毒.jpg");
+}
+
+.MP2 {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/img/Page2/00-現正熱映/02-凸槌特派員.jpg");
+}
+
+.MP3 {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/img/Page2/00-現正熱映/03-滴答屋.jpg");
+}
+
+.MP4 {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/img/Page2/00-現正熱映/04-人肉搜索.jpg");
+}
+
+.MP5 {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/img/Page2/00-現正熱映/05-機器戰犬.jpg");
+}
+
+.MP6 {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/img/Page2/00-現正熱映/06-無雙.jpg");
+}
+
+.MP7 {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/img/Page2/00-現正熱映/07-神鬼拍檔.jpg");
 }
 
 .circle {
