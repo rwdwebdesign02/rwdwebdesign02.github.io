@@ -63,3 +63,18 @@ body{
 .active_banner{
     width:100%;
 }
+
+@media screen and (max-width:720px){
+
+    .title{
+        padding: 180px 0px 25px 0px;
+    }
+
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+       display: none;
+    }
+    
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+        display: none;
+    }
+}
