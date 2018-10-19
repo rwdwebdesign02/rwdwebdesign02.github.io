@@ -77,4 +77,12 @@ body{
     .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
         display: none;
     }
+
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+       display: none;
+    }
+    
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+        display: none;
+    }
 }
