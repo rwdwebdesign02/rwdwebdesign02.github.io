@@ -67,7 +67,7 @@ body{
 @media screen and (max-width:720px){
 
     .title{
-        padding: 180px 0px 25px 0px;
+        padding: 140px 0px 25px 0px;
     }
 
     .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
