@@ -1,4 +1,4 @@
-``;
+
 
 var swiper = new Swiper(".swiper-container", {
   // direction: 'vertical',
@@ -15,8 +15,7 @@ var swiper = new Swiper(".swiper-container", {
 
 var itemsImg = document.querySelectorAll(".items-img");
 var SwiperSlide = document.querySelectorAll(".swiper-slide");
-var itemsSwiperSlide = document.querySelectorAll(".items-swiper-slide");
-var itemsBannerContent = document.querySelectorAll(".items-banner-content");
+
 var itemsClose = document.querySelectorAll(".items-close");
 var imgClose = document.querySelectorAll(".img-close");
 
@@ -27,38 +26,9 @@ itemsImg.forEach(function(element, index) {
     closeAllImg(index);
     closeAllContent(index);
     toggleSwiperSlide(index);
-
-    // toggleItemsBannerContent(index);
-
-    //image onclick,zoom in ,swiper change
-    // element.classList.toggle("active");
     swiper.slideTo(index);
 
-    //find content  click add remove show-content
-    // console.log(itemsBannerContent[index]);
-
-    // itemsBannerContent[index].classList.toggle("active");
-
-    // itemsBannerContent[index].classList.add("active");
-
-    // var exist =itemsBannerContent[index].classList.contains("active");
-    // itemsBannerContent[index].classList.toggle("active",!exist);
-
-    // if(itemsBannerContent[element] == itemsBannerContent[element].active){
-    // itemsBannerContent[index].classList.toggle("active");
-    // }else{
-    //     itemsBannerContent[index].classList.remove("active");
-    // }
-
-    // SwiperSlide[index].classList.toggle("active");
-
-    // if(itemsBannerContent == none){
-    //     // closeAllContent();
-    //     itemsBannerContent[index].classList.add("active");
-    // }else{
-    //     itemsBannerContent[index].classList.remove("active");
-    //     // closeAllContent();
-    // }
+   
   };
 });
 
@@ -92,17 +62,7 @@ function toggleSwiperSlide(indexClicked) {
     });
   }
 
-// function toggleItemsBannerContent(indexClicked) {
-//   itemsBannerContent.forEach(function(element, index) {
-    // if (indexClicked == index) {
-    // if (indexClicked == index && !element.classList.contains("active")) {
-    //   element.classList.add("active");
-    // } else {
-    //   element.classList.remove("active");
-    // }
-//   });
-// }
-
+  
 
 
 var myMouse = document.querySelectorAll(".mouse");
