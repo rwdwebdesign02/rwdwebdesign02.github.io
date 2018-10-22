@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+
+    <title>日日新影院</title>
+
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+            max-width: 591px;
+        }
+        * {
+    box-sizing: border-box;
+    font-family: Microsoft JhengHei;
+}
+        body {
+            margin: 0;
+            /* background-image: linear-gradient(#121C40 66%, black); */
+            background: -moz-linear-gradient(50% 4.24% -90deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+            background: -webkit-linear-gradient(-90deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+            background: -webkit-gradient(linear, 50% 4.24%, 50% 94.24%, color-stop(0, rgba(19, 28, 64, 1)), color-stop(0.2489, rgba(18, 26, 60, 1)), color-stop(0.5, rgba(14, 21, 48, 1)), color-stop(0.7514, rgba(8, 12, 28, 1)), color-stop(1, rgba(0, 0, 0, 1)));
+            background: -o-linear-gradient(-90deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+            background: -ms-linear-gradient(-90deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#131C40', endColorstr='#000000' ,GradientType=0)";
+            background: linear-gradient(180deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#131C40', endColorstr='#000000', GradientType=0);
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #000;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .nav {
+            /* background-color: bisque; */
+            width: 100%;
+            height: 10%;
+            color: aliceblue;
+        }
+
+        .navbar {
+            position: absolute;
+            bottom: top;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .banner {
+            width: 100%;
+            height: 35%;
+        }
+
+        .tittle-box {
+            /* background-color: aqua; */
+            width: 100%;
+            height: 10%;
+            position: relative;
+        }
+
+        .tittle {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+            color: #DE6967;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 35%;
+        }
+
+        .footer {
+            /* background-color: aquamarine; */
+            width: 100%;
+            height: 10%;
+            color: #fff;
+
+        }
+
+        .foot {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .swiper-slide.pic {
+            height: 80%;
+        }
+
+        .swiper-slide.pic-name {
+            height: 20%;
+        }
+
+        .bottom-box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* --------------------------彈出視窗------------------------ */
+        .modal-body{
+            background: -moz-linear-gradient(50% 4.24% -90deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+            background: -webkit-linear-gradient(-90deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+            background: -webkit-gradient(linear, 50% 4.24%, 50% 94.24%, color-stop(0, rgba(19, 28, 64, 1)), color-stop(0.2489, rgba(18, 26, 60, 1)), color-stop(0.5, rgba(14, 21, 48, 1)), color-stop(0.7514, rgba(8, 12, 28, 1)), color-stop(1, rgba(0, 0, 0, 1)));
+            background: -o-linear-gradient(-90deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+            background: -ms-linear-gradient(-90deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#131C40', endColorstr='#000000' ,GradientType=0)";
+            background: linear-gradient(180deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#131C40', endColorstr='#000000', GradientType=0);
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .modal-title{
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .img{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .img-background{
+        background-color: #fff;
+    }
+    .my-2{
+        color: #fff;
+        background: rgb(4, 7, 20);
+    }
+    .container{
+        background-color: #AE3D6B;
+    }
+    .modal-header{
+        background: -moz-linear-gradient(50% 4.24% -90deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+            background: -webkit-linear-gradient(-90deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+            background: -webkit-gradient(linear, 50% 4.24%, 50% 94.24%, color-stop(0, rgba(19, 28, 64, 1)), color-stop(0.2489, rgba(18, 26, 60, 1)), color-stop(0.5, rgba(14, 21, 48, 1)), color-stop(0.7514, rgba(8, 12, 28, 1)), color-stop(1, rgba(0, 0, 0, 1)));
+            background: -o-linear-gradient(-90deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+            background: -ms-linear-gradient(-90deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#131C40', endColorstr='#000000' ,GradientType=0)";
+            background: linear-gradient(180deg, rgba(19, 28, 64, 1) 0%, rgba(18, 26, 60, 1) 24.89%, rgba(14, 21, 48, 1) 50%, rgba(8, 12, 28, 1) 75.14%, rgba(0, 0, 0, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#131C40', endColorstr='#000000', GradientType=0);
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            
+        color: #fff;
+    }
+    .time-box{
+        color: #AE3D6B;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+    .col-4{
+        font-size: 24px;
+    }
+    /* --------------------彈出視窗------------------- */
+    .bottom-box img{
+        width: 100%;
+        
+        /* height: 100%; */
+    }
+    .h6{
+        color: #fff;
+    }
+    .banner-img{
+        height: 100%;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        opacity: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <h1 class="navbar">NAVBAR</h1>
+    </nav>
+    <div class="banner">
+        <div class="swiper-container swiper-banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="banner-img" src="./img/now/00.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="banner-img" src="./img/now/01.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="banner-img" src="./img/now/02.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="banner-img" src="./img/now/03.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="banner-img" src="./img/now/04.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="banner-img" src="./img/now/05.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="banner-img" src="./img/now/06.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="banner-img" src="./img/now/07.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="banner-img" src="./img/now/01.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="banner-img" src="./img/now/00.jpg" alt="">
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <div class="tittle-box">
+        <h4 class="tittle"><b>現正熱映</b></h4>
+    </div>
+    <div class="swiper">
+
+        <div class="swiper-container swiper-bottom">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bottom-box">
+                        <img class=" type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModalLong"" src="./img/now/00.jpg" alt="">
+
+                    <div class="pic-name">
+                        <h6 class="h6">
+                            一個巨星的誕生
+                        </h6>
+                    </div>
+                </div>
+                <div class="swiper-slide bottom-box">
+                        <img class=" type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModalLong"" src="./img/now/00.jpg" alt="">
+                    <div class="pic-name">
+                        <h6 class="h6">
+                            電影名稱
+                        </h6>
+                    </div>
+                </div>
+                <div class="swiper-slide bottom-box">
+                        <img class=" type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModalLong"" src="./img/now/00.jpg" alt="">
+                    <div class="pic-name">
+                        <h6 class="h6">
+                            電影名稱
+                        </h6>
+                    </div>
+                </div>
+                <div class="swiper-slide bottom-box">
+                        <img class=" type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModalLong"" src="./img/now/00.jpg" alt="">
+                    <div class="pic-name">
+                        <h6 class="h6">
+                            電影名稱
+                        </h6>
+                    </div>
+                </div>
+                <div class="swiper-slide bottom-box">
+                        <img class=" type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModalLong"" src="./img/now/00.jpg" alt="">
+                    <div class="pic-name">
+                        <h6 class="h6">
+                            電影名稱
+                        </h6>
+                    </div>
+                </div>
+                <div class="swiper-slide bottom-box">
+                        <img class=" type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModalLong"" src="./img/now/00.jpg" alt="">
+                    <div class="pic-name">
+                        <h6 class="h6">
+                            電影名稱
+                        </h6>
+                    </div>
+                </div>
+                <div class="swiper-slide bottom-box">
+                        <img class=" type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModalLong"" src="./img/now/00.jpg" alt="">
+                    <div class="pic-name">
+                        <h6 class="h6">
+                            電影名稱
+                        </h6>
+                    </div>
+                </div>
+                <div class="swiper-slide bottom-box">
+                        <img class=" type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModalLong"" src="./img/now/00.jpg" alt="">
+                    <div class="pic-name">
+                        <h6 class="h6">
+                            電影名稱
+                        </h6>
+                    </div>
+                </div>
+                <div class="swiper-slide bottom-box">
+                        <img class=" type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModalLong"" src="./img/now/00.jpg" alt="">
+                    <div class="pic-name">
+                        <h6 class="h6">
+                            電影名稱
+                        </h6>
+                    </div>
+                </div>
+                <div class="swiper-slide bottom-box">
+                        <img class=" type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModalLong"" src="./img/now/00.jpg" alt="">
+                    <div class="pic-name">
+                        <h6 class="h6">
+                            電影名稱
+                        </h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <h1 class="foot">FOOTER</h1>
+
+    </div>
+
+    <!-- ---------------------- -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"><b>時刻表</b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="img-background">
+                        <img class="img my-2" src="./img/now/00.jpg" alt="">
+                        <h4 class="text-center"><b>一個巨嬰的誕生</b></h4>
+                    </div>
+                    <div>
+                        <div class="my-2 text-center">至尊廳</div>
+                        <div class="container">
+
+                            <div class="row py-3">
+
+                                <div class="col-4 text-center my-1">
+                                    <div class="time-box"><b>10:20</b></div>
+                                </div>
+                                <div class="col-4 text-center my-1">
+                                    <div class="time-box"><b>10:20</b></div>
+                                </div>
+                                <div class="col-4 text-center my-1">
+                                    <div class="time-box"><b>10:20</b></div>
+                                </div>
+                                <div class="col-4 text-center my-1">
+                                    <div class="time-box"><b>10:20</b></div>
+                                </div>
+                                <div class="col-4 text-center my-1">
+                                    <div class="time-box"><b>10:20</b></div>
+                                </div>
+                                <div class="col-4 text-center my-1">
+                                    <div class="time-box"><b>10:20</b></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="my-2 text-center">星光廳</div>
+                        <div class="container">
+
+                            <div class="row py-3">
+
+                                <div class="col-4 text-center my-1">
+                                    <div class="time-box"><b>10:20</b></div>
+                                </div>
+                                <div class="col-4 text-center my-1">
+                                    <div class="time-box"><b>10:20</b></div>
+                                </div>
+                                <div class="col-4 text-center my-1">
+                                    <div class="time-box"><b>10:20</b></div>
+                                </div>
+                                <div class="col-4 text-center my-1">
+                                    <div class="time-box"><b>10:20</b></div>
+                                </div>
+                                <div class="col-4 text-center my-1">
+                                    <div class="time-box"><b>10:20</b></div>
+                                </div>
+                                <div class="col-4 text-center my-1">
+                                    <div class="time-box"><b>10:20</b></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------- -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+
+    <script>
+        var swiperBanner = new Swiper('.swiper-banner', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            effect: 'fade',
+            Loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            // pagination: {
+            //     el: '.swiper-pagination',
+            //     // clickable: true,
+            // },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-bottom', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 3,
+            // Loop: true,
+            coverflowEffect: {
+                rotate: 40,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            // pagination: {
+            //     el: '.swiper-pagination',
+            // },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+    
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
