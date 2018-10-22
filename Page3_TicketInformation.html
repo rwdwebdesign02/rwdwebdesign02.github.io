@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+        <link rel="stylesheet" href="./img/all/all_favicon_icon-09.png">
+        <link rel="Shortcut Icon" type="image/x-icon" href="./img/all/all_favicon_icon-09.png" />
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./footer.css">
     <link rel="stylesheet" href="./pagesCSS.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +13,94 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
     <!-- 上:BootstrapCSS 下:BootstrapJQ -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>售票資訊</title>
 </head>
 
 <body>
     <div class="all">
-        <div class="container">
-            <nav></nav>
+        <div class="container p-0">
+            <nav class="navbar">
+                <div class="container p-0">
+                    <div class="nav_flex">
+                        <div class="web_navlogo">
+                            <a href="https://rwdwebdesign02.github.io/">
+                                <img src="/img/all/nav_weblogo_0.png" alt="日日新戲院">
+                        </div>
+                        <div class="nav_item align-self-baseline">
+                            <a class="nav_link" href="https://rwdwebdesign02.github.io/NewMoivePage.html">即將上映</a>
+                            <a class="nav_link" href="https://rwdwebdesign02.github.io/Page3_TicketInformation.html">售票資訊</a>
+                            <a class="nav_link" href="https://rwdwebdesign02.github.io/active.html">活動公告</a>
+                            <a class="nav_link" href="https://rwdwebdesign02.github.io/roomintro.html">影廳介紹</a>
+                            <a class="nav_link" href="https://rwdwebdesign02.github.io/about.html">關於日新</a>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+
+
+            <div class="mobile_navbar">
+                <div class="container">
+                    <div class="mobile_nav_flex">
+                        <div id="mobile_nav_toggle" class="mobile_nav_toggle">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        <div class="mobile_navlogo">
+                            <img src="/fake_logo.jpg" alt="日日新戲院">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="mobile_nav_item active">
+                <div class="container">
+                    <div class="row">
+                        <div class="col colcenter">
+                            <div>
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <a class="nav_link" href="https://rwdwebdesign02.github.io">現正熱映</a>
+
+                        </div>
+                        <div class="col colcenter">
+                            <div>
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <a class="nav_link" href="https://rwdwebdesign02.github.io/NewMoivePage.html">即將上映</a>
+                        </div>
+                        <div class="col colcenter">
+                            <div>
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <a class="nav_link" href="https://rwdwebdesign02.github.io/Page3_TicketInformation.html">售票資訊</a>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col colcenter">
+                            <div>
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <a class="nav_link" href="https://rwdwebdesign02.github.io/active.html">活動公告</a>
+                        </div>
+                        <div class="col colcenter">
+                            <div>
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <a class="nav_link" href="https://rwdwebdesign02.github.io/roomintro.html">影廳介紹</a>
+                        </div>
+                        <div class="col colcenter">
+                            <div>
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <a class="nav_link" href="https://rwdwebdesign02.github.io/about.html">關於日新</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="pad"></div>
             <div class="L B C ">售票資訊</div>
             <div class="spacing"></div>
@@ -223,7 +302,7 @@
                     <div class="Ppad"></div>
                     <div class="B C L">外租服務</div>
                     <div class="Ppad3 Phone_L"></div>
-                    <div >
+                    <div>
                         <ul class="ul">
                             <li>團劃-只劃少部分的座位</li>
                             <li>包廳-劃整場座位</li>
@@ -270,9 +349,9 @@
 
                     <div class="Ppad2"></div>
                     <div class="img row C">
-                            <div class="icon col-6"><img class="w-100" src="/img/Page2/04-售票資訊(手機)/銷售通路-03.png" alt=""></div>
-                            <div class="icon col-6"><img class="w-100" src="/img/Page2/04-售票資訊(手機)/銷售通路-04.png" alt=""></div>
-                        </div>
+                        <div class="icon col-6"><img class="w-100" src="/img/Page2/04-售票資訊(手機)/銷售通路-03.png" alt=""></div>
+                        <div class="icon col-6"><img class="w-100" src="/img/Page2/04-售票資訊(手機)/銷售通路-04.png" alt=""></div>
+                    </div>
                     <div class="Ppad3"></div>
                     <div class="row C Phone_L">
                         <div class="col-6 B">雜貨店</div>
@@ -298,28 +377,74 @@
                     <div class="B C L">電影分級</div>
                     <div class="Ppad2"></div>
                     <div class="w-100">
-                    <div class="Pimg row C no-gutters">
-                        <div class="icon col-3 saquare"><img class="w-100" src="/img/Page2/04-售票資訊(手機)/電影分級-01.png" alt=""><div class="title Ppad3 T">普遍級</div></div>
-                        <div class="icon col-3 saquare"><img class="w-100" src="/img/Page2/04-售票資訊(手機)/電影分級-02.png" alt=""><div class="title Ppad3 T">保護級</div></div>
-                        <div class="icon col-3 saquare"><img class="w-100" src="/img/Page2/04-售票資訊(手機)/電影分級-03.png" alt=""><div class="title Ppad3 T">輔導級</div></div>
-                    </div>
-                    <div class="Ppad3"></div>
-                    <div class="Pimg row C no-gutters ">
-                        <div class="icon col-3 saquare"><img class="w-100" src="/img/Page2/04-售票資訊(手機)/電影分級-04.png" alt=""><div class="col Ppad3 T">輔15級</div></div>
-                        <div class="icon col-3 saquare"><img class="w-100" src="/img/Page2/04-售票資訊(手機)/電影分級-05.png" alt=""><div class="col Ppad3 T">限制級</div></div>
-                    </div>
-                    <div class="Ppad3"></div>
-                </div>
+                        <div class="Pimg row C no-gutters">
+                            <div class="icon col-3 saquare"><img class="w-100" src="/img/Page2/04-售票資訊(手機)/電影分級-01.png"
+                                    alt="">
+                                <div class="title Ppad3 T">普遍級</div>
+                            </div>
+                            <div class="icon col-3 saquare"><img class="w-100" src="/img/Page2/04-售票資訊(手機)/電影分級-02.png"
+                                    alt="">
+                                <div class="title Ppad3 T">保護級</div>
+                            </div>
+                            <div class="icon col-3 saquare"><img class="w-100" src="/img/Page2/04-售票資訊(手機)/電影分級-03.png"
+                                    alt="">
+                                <div class="title Ppad3 T">輔導級</div>
+                            </div>
+                        </div>
+                        <div class="Ppad3"></div>
+                        <div class="Pimg row C no-gutters ">
+                            <div class="icon col-3 saquare"><img class="w-100" src="/img/Page2/04-售票資訊(手機)/電影分級-04.png"
+                                    alt="">
+                                <div class="col Ppad3 T">輔15級</div>
+                            </div>
+                            <div class="icon col-3 saquare"><img class="w-100" src="/img/Page2/04-售票資訊(手機)/電影分級-05.png"
+                                    alt="">
+                                <div class="col Ppad3 T">限制級</div>
+                            </div>
+                        </div>
+                        <div class="Ppad3"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     </div>
-    <div class="Ppad4"></div>
+    </div>
+    <div class="paddingTop">
+        <div class="container-fluid container_bgcolor">
+            <div class="container">
+                <div class="footer_flex">
+                    <div class="footer_logo">
+                        <img src="/img/all/footer_weblogo_0-10.png" alt="日日新戲院">
+                    </div>
 
+                    <div>
+                        <p>電話│04-22236757</p>
+                        <p>地址│臺中市中區中華路一段58號</p>
+                        <p>Copyright © 2018 sunrisecinema Inc.</p>
+                    </div>
 
-    <footer></footer>
+                    <div class="footer_icon">
+                        <a href="https://zh-tw.facebook.com/TSSCMT/"><img class="iconimg" src="/img/all/footer_fb_icon.png"
+                                alt="臉書連結"></a>
+                        <a href="mailto:sunrise.movie@msa.hinet.net"><img class="iconimg" src="/img/all/footer_email_icon.png"
+                                alt="日日新戲院mail">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+<script src="./navbar.js"></script>
 
 </html>
