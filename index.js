@@ -83,3 +83,5 @@ myMouse.forEach(function (element, index) {
     // console.log(3333)
   };
 });
+
+TweenMax.staggerFrom(".nav-gsap",1 , {ease:Bounce.easeOut,x:-500,opacity:0},0.1)

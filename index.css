@@ -57,6 +57,10 @@ body {
     padding: 18.7px 49px;
 }
 
+.nav-gsap:hover{
+    background-image: linear-gradient(to right, #AE3D6B, #DF6967);
+}
+
 .nav-center-link {
     border-radius: 2px;
     background-image: linear-gradient(to right, #DF6967, #AE3D6B);
@@ -236,7 +240,7 @@ height: 74vh;
 }
 
 .line {
-    width: 41.5%;
+    width: 43.5%;
     border-bottom: 5px solid;
     padding-bottom: 5px;
     margin-bottom: 30px;
