@@ -192,8 +192,8 @@ a {
 .items-banner-content.active {
     display: block;
     float: right;
-    /* width: 800px; */
-    /* height: 1000px; */
+    width: 40vw;
+    height: 74vh;
     /*---------------height之後要修正 ---------------------*/
     padding: 20px;
     overflow-y:scroll;
