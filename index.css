@@ -57,8 +57,11 @@ body {
     padding: 18.7px 49px;
 }
 
-.nav-gsap:hover{
+.nav-center-content div:hover{
     background-image: linear-gradient(to right, #AE3D6B, #DF6967);
+    transition: 0.5s;
+    font-size: 20px;
+    font-weight: 900;
 }
 
 .nav-center-link {
@@ -81,8 +84,8 @@ a {
 
 .icon {
     float: left;
-    margin: 4.5px 20px 4.5px 49px;
-    line-height: 36px;
+    margin: 4.5px 10px 4.5px 49px;
+    line-height: 10px;
 
 }
 
