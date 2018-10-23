@@ -84,4 +84,4 @@ myMouse.forEach(function (element, index) {
   };
 });
 
-TweenMax.staggerFrom(".nav-gsap",1 , {ease:Bounce.easeOut,x:-500,opacity:0},0.1)
+TweenMax.staggerFrom(".nav-gsap",1 , {ease:Power1.easeIn,x:-500,opacity:0},0.1)
