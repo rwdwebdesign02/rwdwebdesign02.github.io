@@ -7,11 +7,6 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#131C40',endColorstr='#000000' , GradientType=0);
 }
 
-.navbar {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0;
-}
 
 .container {
   color: white;
