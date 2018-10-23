@@ -58,15 +58,21 @@ body {
 }
 
 .nav-center-content div:hover{
-    background-image: linear-gradient(to right, #AE3D6B, #DF6967);
+    /* background-image: linear-gradient(to right, #AE3D6B, #DF6967); */
     transition: 0.5s;
+    background-position: left center; 
     font-size: 20px;
     font-weight: 900;
 }
 
 .nav-center-link {
     border-radius: 2px;
-    background-image: linear-gradient(to right, #DF6967, #AE3D6B);
+    background-color: #de6967;
+    background-image: linear-gradient(to right ,#ae3d6b 0% , #de6967 51% ,#ae3d6b 100%);
+    background-size: 200% auto;
+    background-position:right center;
+    text-transform: uppercase;
+    transition: 0.5s;
     color: rgba(255, 255, 255, 0.8);
     letter-spacing: 5px;
 }
