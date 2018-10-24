@@ -7,7 +7,6 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#131C40',endColorstr='#000000' , GradientType=0);
 }
 
-
 .container {
   color: white;
   font-family: Microsoft JhengHei;
@@ -208,10 +207,7 @@ body {
   margin-left: 10px;
 }
 
-
-
-
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 992px) {
   .all {
     display: none;
   }

@@ -200,8 +200,8 @@
         </div>
     </div>
 
-    <div class="BtoTop">
-       <a href="#"><img src="/img/all/all_backtotop_btn-15.svg" alt="日新戲院backtotop"></a> 
+    <div id="BtoTop" class="BtoTop hide">
+        <a href="#"><img src="/img/all/all_backtotop_btn-15.svg" alt="日新戲院backtotop"></a>
     </div>
 
     <div class="paddingTop">
@@ -262,6 +262,29 @@
             },
         });
     </script>
+
+
+
+<script>
+       
+      
+    BtoTop = document.getElementById("BtoTop");
+
+
+     var myScrollFunc = function () {
+         var y = window.scrollY;
+         if (y >= 100) {
+             BtoTop.className = "BtoTop show"
+         } else {
+             BtoTop.className = "BtoTop hide"
+         }
+     };
+
+     window.addEventListener("scroll", myScrollFunc);
+
+
+
+ </script>
 </body>
 
 </html>
