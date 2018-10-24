@@ -96,6 +96,10 @@ body{
         display: none;
     }
 
+    .mobile_timeline{
+        display: none;
+    }
+
 }
 
 @media screen and (max-width:720px) {
