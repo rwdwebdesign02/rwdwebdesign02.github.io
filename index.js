@@ -8,7 +8,7 @@
 var swiper = new Swiper(".swiper-index", {
   // direction: 'vertical',
   slidesPerView: "auto",
-  spaceBetween: 50,
+  spaceBetween: 90,
   mousewheel: true,
   freeMode: true,
   // loop:true,
@@ -22,7 +22,7 @@ var itemsImg = document.querySelectorAll(".items-img");
 var SwiperSlide = document.querySelectorAll(".index-swiper-js");
 var itemsClose = document.querySelectorAll(".items-close");
 var imgClose = document.querySelectorAll(".img-close");
-
+var indexBox = document.querySelector(".index-box");
 
 
 itemsImg.forEach(function (element, index) {
@@ -36,6 +36,15 @@ itemsImg.forEach(function (element, index) {
   };
 });
 
+
+// indexBox.onclick = function(){
+//   itemsClose.forEach(function (element, index) {
+//     if (indexBox == itemsClose[element]) {
+//       console.log(987987987)
+//       element.classList.remove("active");
+//     }
+//   });
+// }
 
 function closeAllContent(indexClicked) {
   itemsClose.forEach(function (element, index) {
