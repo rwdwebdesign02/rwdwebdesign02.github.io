@@ -73,6 +73,15 @@ body{
     
 }
 
+.hide {
+    opacity: 0;
+ 
+  }
+  .show {
+    opacity: 1;
+  
+  }
+
 @media screen and (max-width:720px){
 
     .title{
@@ -94,4 +103,13 @@ body{
     .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
         display: none;
     }
+
+
+    .BtoTop {
+        position: fixed;
+        right: 29px;
+        bottom: 155px;
+        width: 36px;
+    }
+       
 }

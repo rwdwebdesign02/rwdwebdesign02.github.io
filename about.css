@@ -30,9 +30,17 @@ body{
     right: 30px;
     bottom: 55px;
     width: 60px;
-   
+    
 }
 
+  .hide {
+    opacity: 0;
+ 
+  }
+  .show {
+    opacity: 1;
+  
+  }
 
 
 @media screen and (max-width:720px) {
@@ -54,5 +62,13 @@ body{
         text-indent: 2em;
         line-height:30px;
     }
+
+    .BtoTop {
+        position: fixed;
+        right: 29px;
+        bottom: 155px;
+        width: 36px;
+    }
+    
 
 }
