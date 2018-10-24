@@ -103,6 +103,15 @@ body{
     width: 100%;
 }
 
+.BtoTop {
+    position: fixed;
+    right: 30;
+    right: 30px;
+    bottom: 55px;
+    width: 60px;
+    z-index: 1000;
+}
+
 
 
 @media screen and (max-width:720px) {

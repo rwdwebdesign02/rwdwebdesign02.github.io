@@ -208,13 +208,18 @@ body {
   margin-left: 10px;
 }
 
+
+
+
 @media screen and (max-width: 720px) {
   .all {
     display: none;
   }
+
   .Phone {
     display: block;
   }
+
   .Pimg {
     width: 100%;
     -webkit-box-pack: center;

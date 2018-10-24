@@ -24,7 +24,14 @@ body{
     line-height:48px;
 }
 
-
+.BtoTop {
+    position: fixed;
+    right: 30;
+    right: 30px;
+    bottom: 55px;
+    width: 60px;
+    z-index: 1000;
+}
 
 
 
