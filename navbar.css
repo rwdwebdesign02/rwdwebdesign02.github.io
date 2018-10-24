@@ -108,6 +108,12 @@ body{
 }
 
 
+
+
+.close_nav{
+    height: 50vh;
+}
+
 .clearfix{
     clear: both;
 }
