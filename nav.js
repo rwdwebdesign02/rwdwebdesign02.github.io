@@ -4,7 +4,3 @@ mobileNavToggle.onclick = function () {
 }
 
 
-var close_nav = document.querySelector("#close_nav")
-close_nav.onclick = function () {
-    document.querySelector(".close_nav").classList.toggle('active');
-}
