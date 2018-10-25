@@ -12,42 +12,11 @@
 
 </head>
 <style>
-.video-container {
-
-position: relative;
-
-padding-bottom: 56.25%;
-
-padding-top: 30px;
-
-height: 0;
-
-overflow: hidden;
-
-}
-
-.video-container iframe{
-
-position: absolute;
-
-top: 0;left: 0;
-
-width: 100%;
-
-height: 100%;}
-
-
-.ytplayerX{
-    display:none;
-}
-.ytplayer{
-    display:block;
-}
 
 </style>
 
 <body>
-    <button style="width:34px;height:34px;background-image: url('/youtube.png');background-size: contain;" type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+    <button style="width:34px;height:34px;background-image: url('/img/page2/youtube.png');background-size: contain;" type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
     </button>
 
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -78,7 +47,8 @@ var stop = document.querySelector("#exampleModal")
 var change = document.querySelector(".video")
 
 stop.onclick = function(){
-    change.setAttribute('src','https://www.youtube.com/embed/z1a1EmOp3GA?ecver=1&controls=0&showinfo=0&rel=0&autoplay=0&loop=1&mute=0").style.src="https://www.youtube.com/embed/z1a1EmOp3GA?ecver=1&controls=0&showinfo=0&rel=0&autoplay=0&loop=1&mute=0"')
+    console.log("fuckU")
+    // change.setAttribute('src','https://www.youtube.com/embed/z1a1EmOp3GA?ecver=1&controls=0&showinfo=0&rel=0&autoplay=0&loop=1&mute=0").style.src="https://www.youtube.com/embed/z1a1EmOp3GA?ecver=1&controls=0&showinfo=0&rel=0&autoplay=0&loop=1&mute=0"')
 }
 
 </script>

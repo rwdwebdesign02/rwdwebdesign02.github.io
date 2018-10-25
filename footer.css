@@ -29,6 +29,15 @@
     padding-left: 7px;
 }
 
+.footer_text {
+    text-align: center;
+    margin: auto;
+}
+
+.footer_text p{
+    margin: 0;
+}
+
 
 @media screen and (max-width:720px) {
 
@@ -50,6 +59,12 @@
 
     .footer_flex p{
         font-size: 14px;
+    }
+
+    .BtoTop{
+        position: fixed;
+        bottom: 20px;
+        
     }
 
 }

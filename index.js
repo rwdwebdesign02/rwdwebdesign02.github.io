@@ -1,14 +1,14 @@
 
-if (window.innerWidth < 632) {
-  console.log(window.innerWidth, "<632")
-  window.location.assign("/m-index.html");
-}
+// if (window.innerWidth < 632) {
+//   console.log(window.innerWidth, "<632")
+//   window.location.assign("/m-index.html");
+// }
 
 
-var swiper = new Swiper(".swiper-container", {
+var swiper = new Swiper(".swiper-index", {
   // direction: 'vertical',
   slidesPerView: "auto",
-  spaceBetween: 50,
+  spaceBetween: 90,
   mousewheel: true,
   freeMode: true,
   // loop:true,
@@ -19,10 +19,11 @@ var swiper = new Swiper(".swiper-container", {
 });
 
 var itemsImg = document.querySelectorAll(".items-img");
-var SwiperSlide = document.querySelectorAll(".swiper-slide");
-
+var SwiperSlide = document.querySelectorAll(".index-swiper-js");
 var itemsClose = document.querySelectorAll(".items-close");
 var imgClose = document.querySelectorAll(".img-close");
+var indexBox = document.querySelector(".index-box");
+
 
 itemsImg.forEach(function (element, index) {
   element.onclick = function () {
@@ -32,10 +33,18 @@ itemsImg.forEach(function (element, index) {
     closeAllContent(index);
     toggleSwiperSlide(index);
     swiper.slideTo(index);
-
-
   };
 });
+
+
+// indexBox.onclick = function(){
+//   itemsClose.forEach(function (element, index) {
+//     if (indexBox == itemsClose[element]) {
+//       console.log(987987987)
+//       element.classList.remove("active");
+//     }
+//   });
+// }
 
 function closeAllContent(indexClicked) {
   itemsClose.forEach(function (element, index) {
@@ -84,4 +93,4 @@ myMouse.forEach(function (element, index) {
   };
 });
 
-TweenMax.staggerFrom(".nav-gsap",1 , {ease:Bounce.easeOut,x:-500,opacity:0},0.1)
+TweenMax.staggerFrom(".nav-gsap",1 , {ease:Power1.easeIn,x:-500,opacity:0},0.1)

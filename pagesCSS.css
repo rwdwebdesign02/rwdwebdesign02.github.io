@@ -84,6 +84,10 @@ body {
   padding-top: 30px;
 }
 
+.PT2 {
+  padding-top: 15px;
+}
+
 .PD {
   padding-bottom: 15px;
 }
@@ -211,12 +215,26 @@ body {
   margin-left: 10px;
 }
 
+.BtoTop {
+  position: fixed;
+  right: 30;
+  right: 30px;
+  bottom: 55px;
+  width: 60px;
+}
+
 @media screen and (max-width: 992px) {
   .all {
     display: none;
   }
   .Phone {
     display: block;
+  }
+  .BtoTop {
+    position: fixed;
+    right: 29px;
+    bottom: 155px;
+    width: 36px;
   }
   .Pimg {
     width: 100%;
@@ -249,5 +267,21 @@ body {
   .phone_container2 {
     margin: 0px 10px;
   }
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=pagesCSS.css.map */

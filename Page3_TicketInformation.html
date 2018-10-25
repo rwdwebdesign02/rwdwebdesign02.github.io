@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <title>售票資訊</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
@@ -11,16 +15,10 @@
     <link rel="stylesheet" href="./pagesCSS.css">
     <link rel="stylesheet" href="./navbar.css">
     <link rel="stylesheet" href="./footer.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <!-- 上:BootstrapCSS 下:BootstrapJQ -->
-    <title>售票資訊</title>
 </head>
 
 <body>
-    
         <nav class="navbar">
                 <div class="container">
                     <div class="nav_flex">
@@ -52,9 +50,14 @@
             
                     </div>
                 </div>
+                <div id="BtoTop" class="BtoTop hide">
+                    <a href="#"><img src="/img/all/all_backtotop_btn-15.svg" alt="日新戲院backtotop"></a>
+                </div>
+                
 <div class="all">
         <div class="container p-0">
-            <div class="pad"></div>
+             
+                        <div class="pad"></div>
             <div class="L B C ">售票資訊</div>
             <div class="spacing"></div>
             <div class="spacing"></div>
@@ -172,7 +175,8 @@
                     <div class="spacing"></div>
                 </div>
                 <div class="row no-gutters C">
-                    <div class="saquare col M B C"><img class="w-100 PD" src="/img/Page3/05-電影分級/00-電影分級-普遍級.png" alt="">   普遍級<br>
+                    <div class="saquare col M B C"><img class="w-100 PD" src="/img/Page3/05-電影分級/00-電影分級-普遍級.png" alt="">
+                        普遍級<br>
                         一般觀眾皆可觀賞。</div>
                     <div class="saquare col M B C"><img class="w-100 PD" src="/img/Page3/05-電影分級/01-電影分級-保護級.png" alt="">保護級<br>
                         未滿6歲之兒童不得觀賞，6歲以上未滿12歲之兒童，須父母、師長或成年親友陪伴輔導觀賞。</div>
@@ -183,7 +187,7 @@
                     <div class="saquare col M B C"><img class="w-100 PD" src="/img/Page3/05-電影分級/04-電影分級-限制級.png" alt="">限制級<br>
                         未滿18歲之人不得觀賞。</div>
                 </div>
-            
+
                 <div class="pad"></div>
             </div>
         </div>
@@ -193,7 +197,7 @@
 </div>
 </div>
     <!-- 手機版版面 -->
-    
+    <div class="Phone">
         <div class="phone_container">
             <div class="Ppad"></div>
             <div style="padding-top:104px;" class="C B L">售票資訊</div>
@@ -345,7 +349,9 @@
     </div>
     </div>
     </div>
-    <div class="paddingTop"></div>
+</div>
+
+    <div class="paddingTop">
         <div class="container-fluid container_bgcolor">
             <div class="container">
                 <div class="footer_flex">
@@ -380,6 +386,22 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
 
-<script src="./navbar.js"></script>
+    <script src="/navbar.js"></script>
+
+<script>
+        BtoTop = document.getElementById("BtoTop");
+
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 100) {
+        BtoTop.className = "BtoTop show"
+    } else {
+        BtoTop.className = "BtoTop hide"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+</script>
 
 </html>

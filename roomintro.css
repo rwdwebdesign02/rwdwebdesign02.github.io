@@ -103,6 +103,25 @@ body{
     width: 100%;
 }
 
+.BtoTop {
+    position: fixed;
+    right: 30;
+    right: 30px;
+    bottom: 55px;
+    width: 60px;
+
+}
+
+
+.hide {
+    opacity: 0;
+ 
+  }
+  .show {
+    opacity: 1;
+  
+  }
+
 
 
 @media screen and (max-width:720px) {
@@ -161,4 +180,13 @@ body{
     .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
         display: none;
     }
+
+
+    .BtoTop {
+        position: fixed;
+        right: 29px;
+        bottom: 155px;
+        width: 36px;
+    }
+       
 }

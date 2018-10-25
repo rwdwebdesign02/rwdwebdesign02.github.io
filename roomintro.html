@@ -120,6 +120,8 @@
                     <a class="mobile_nav_link" href="https://rwdwebdesign02.github.io/about.html">關於日新</a>
                 </div>
             </div>
+
+            <div id="close_nav" class="close_nav"></div>
         </div>
 
     </div>
@@ -200,6 +202,9 @@
         </div>
     </div>
 
+    <div id="BtoTop" class="BtoTop hide">
+        <a href="#"><img src="/img/all/all_backtotop_btn-15.svg" alt="日新戲院backtotop"></a>
+    </div>
 
     <div class="paddingTop">
         <div class="container-fluid container_bgcolor">
@@ -209,7 +214,7 @@
                         <img src="/img/all/footer_weblogo_0-10.png" alt="日日新戲院">
                     </div>
 
-                    <div>
+                    <div class="footer_text">
                         <p>電話│04-22236757</p>
                         <p>地址│臺中市中區中華路一段58號</p>
                         <p>Copyright © 2018 sunrisecinema Inc.</p>
@@ -259,6 +264,29 @@
             },
         });
     </script>
+
+
+
+<script>
+       
+      
+    BtoTop = document.getElementById("BtoTop");
+
+
+     var myScrollFunc = function () {
+         var y = window.scrollY;
+         if (y >= 100) {
+             BtoTop.className = "BtoTop show"
+         } else {
+             BtoTop.className = "BtoTop hide"
+         }
+     };
+
+     window.addEventListener("scroll", myScrollFunc);
+
+
+
+ </script>
 </body>
 
 </html>
